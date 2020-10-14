@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>모션 웹배너</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;500&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <style>
+    * { margin: 0; padding: 0; }
+    a { text-decoration: none; }
+    #banner {
+      width: 700px; height: 400px;
+      background: #ccc;
+      position: absolute;
+      left: calc(50% - 350px);
+      top: calc(50% - 200px);
+    }
+    
+    body {
+      font-family: 'Roboto Slab', serif;
+    }
+    
+    .border {
+      position: absolute;
+      left: 10px; top: 10px;
+    }
+    #banner > video {
+      position: absolute;
+    }
+    
+    
+    header {
+      width: 213px; height: 215px;
+/*      background: #ccc;*/
+/*      outline: 1px solid red;*/
+      position: relative;
+      left: 244px;
+      top: 71px;
+    }
+    
+    header > img {
+      position: absolute;
+    }
+    
+    header > h1 {
+      position: absolute;
+      text-align: center;
+/*      outline: 1px solid red;*/
+      left: 40px; top: 70px;
+      text-transform: uppercase;
+    }
+    
+    header > h1 > span {
+      display: block;
+      color: white;
+      font-size: 20px;
+      font-weight: 200;
+      letter-spacing: 2px;
+    }
+    
+    header > h1 > span:nth-child(2) {
+      
+      padding-bottom: 5px;
+      border-bottom: 1px solid #fff;
+    }
+    
+    header > h1 > .happy {
+      padding-top: 5px;
+      letter-spacing: 0px;
+      font-size: 1px;
+    }
+    
+    .btn {
+      display: block;
+      width: 83px; height: 25px;
+      line-height: 25px;
+      text-align: center;
+      border: 1px solid #fff;
+      border-radius: 5px;
+      position: relative;
+      left: 311px; top: 100px;
+      color: #fff;
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      font-weight: 300;
+    }
+    
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.164);
+      color: #fff;
+    }
+
+    header a {
+      animation-name: title;
+      animation-duration: 8s;
+    }
+
+    @keyframes title {
+      0%{ opacity: 0; }
+      15%{ opacity: 0; }
+      40%{ opacity: 1; }
+    }
+
+  </style>
+</head>
+<body>
+  <div href="#" id="banner">
+    <video 
+      src="./images/christmas.mp4"
+      autoplay
+      loop
+      muted
+    ></video>
+    <img src="./images/border.png" alt="#" class="border">
+    <header>
+      <img src="./images/wreath.png" alt="" class="wreath">
+      <h1>
+        <span>merry</span>
+        <span>christmas</span>
+        <span class="happy">and happy new year</span>
+      </h1> 
+    </header>
+    <a href="#" class="btn">show more</a>
+  </div>
+
+  <script>
+    
+  </script>
+</body>
+</html>
